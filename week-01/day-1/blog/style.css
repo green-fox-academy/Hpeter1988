@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css?family=Germania+One|Merriweather');
+body{margin: auto;
+     width: 60vw;
+     background-image: url(https://images.pexels.com/photos/988872/pexels-photo-988872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+     font-family: 'Germania One', cursive;}
+h1{background: grey;
+border:2px;
+border-style: solid;
+font-family: 'Germania One', cursive;}
+.posts{border: 1px;
+    ;border-style: solid;
+margin-bottom: 0.5cm;}
+textarea{border: 1px;
+    ;border-style: solid;
+    width: 60vw; }
+
+input{border: 1px;
+     border-style: solid;}
+
+hr {
+    background: transparent;
+    border-bottom: 2px dashed black;
+    width: 40%; margin: 0 auto;}
+#button{background-color: tomato}
+h2{color: tomato}

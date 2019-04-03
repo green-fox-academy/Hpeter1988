@@ -1,0 +1,29 @@
+body{font-family: 'Courier New', Courier;
+    background-image:url(../myFirstWebPage/assets/topography.png);}
+#header{width: 16px;
+        padding: 10px 1200px 10px 30px;
+        margin: 10px;
+        background-color:#333333;}
+h1{text-align: center;}
+h2{text-align: center;
+   color: #ff0099;}
+h3{text-align: center;}
+h4{text-align: center;}
+p{font-family: 'Germania One', cursive;
+  text-align: center}
+.title{color: #ff0099}
+hr {
+  text-align: center; 
+  border-width: 1px 0;
+  border-style: none;
+    margin: 20px 10px; 
+  overflow: visible;
+
+}
+
+hr:after {
+  content: "---";
+  display: inline;
+  padding: 0 0.5em;
+}
+.list{color:#ff0099}
