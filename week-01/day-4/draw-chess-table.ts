@@ -12,12 +12,19 @@
 // % % % %
 //  % % % %
 //
-let lineCount: number = 8
-for (let k: number = 0; k < lineCount; k++){
-    if(k % 2 === 0){
-        console.log(" % % % %")};
+let lineCount: number = 8;
+let finalOut: string = ''
 
-    if(k % 2 > 0){
-        console.log("% % % %")
+
+for (let i: number = 0; i < lineCount; i++) {
+    finalOut;
+    for (let j: number = 0; j < lineCount; j++) {
+        if ((i + j) % 2 == 0) {
+            finalOut += '%';
+        }
+        else {
+            finalOut += ' ';
+        }
     }
-};
+    console.log(finalOut);
+}
