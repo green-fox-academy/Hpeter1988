@@ -7,7 +7,6 @@
 //   ***
 //  *****
 // *******'
-'use strict';
 
 let lineCount: number = 4;
 let finalOut: string;
