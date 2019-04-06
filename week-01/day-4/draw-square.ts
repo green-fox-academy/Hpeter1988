@@ -17,7 +17,7 @@ for(let i: number = 1; i <= lineCount; i++){
         doboz = doboz + '%'}
         else{
             if(j === 1 || j === lineCount){doboz = doboz + '%' }
-            else{doboz = doboz + '-'}
+            else{doboz = doboz + ' '}
         }
     }
 
