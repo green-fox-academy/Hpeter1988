@@ -56,3 +56,4 @@ let j: number = 1521;
 
 console.log(j % 3 === 0 || j % 5 === 0);
 // tell if j is divisible by 3 or 5 (as a boolean)
+export {};

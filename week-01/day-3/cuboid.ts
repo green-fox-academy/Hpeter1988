@@ -11,3 +11,4 @@ let bSide: number = 8.2;
 let cSide: number = 16.2;
 console.log('Surface Area:'+ 2 * (aSide*bSide+aSide*cSide+cSide*bSide) );
 console.log( 'Volume:' + aSide*bSide*cSide);
+export {};

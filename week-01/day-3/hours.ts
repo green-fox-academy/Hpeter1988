@@ -13,3 +13,4 @@ console.log(hoursDaily * days * weeks);
 console.log(hoursDaily * days / 52 * 100);
 // Print the percentage of the coding hours in the semester if the average
 // work hours weekly is 52
+export {};

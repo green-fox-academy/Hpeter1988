@@ -11,3 +11,4 @@ console.log(myAge)
 console.log(myHight)
 console.log(married)
 
+export {};

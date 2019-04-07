@@ -10,6 +10,11 @@
 //  John Doe
 //  31
 //  1.87
-console.log('Harasztia Péter');
-console.log('30');
-console.log('171cm')
+let n: string = 'John Doe'
+let a: number = 30
+let h: number = 1.7
+
+console.log(n);
+console.log(a);
+console.log(h);
+export {};

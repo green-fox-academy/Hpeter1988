@@ -6,3 +6,4 @@ while(line < 4){
 console.log(star=star + "*");
 line++;
 };
+export {};

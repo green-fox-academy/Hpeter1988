@@ -3,7 +3,7 @@ let a: number = 15;
 let b: number = 1;
 
 while (a <= 150 && b<=10){
-  console.log(b + " * 15 = " + a * b);
+  console.log(b + " * "+ a +" = " + a * b);
   b++;
 }
 
@@ -23,3 +23,4 @@ while (a <= 150 && b<=10){
 // 8 * 15 = 120
 // 9 * 15 = 135
 // 10 * 15 = 150
+export {};

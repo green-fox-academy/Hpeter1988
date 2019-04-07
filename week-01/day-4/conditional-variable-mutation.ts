@@ -64,3 +64,4 @@ else if( d % 4 >=0 || time <= 200 ){
 // if time is more than 200
 // set out3 to "Time out"
 // otherwise set out3 to "Run Forest Run!"
+export {};

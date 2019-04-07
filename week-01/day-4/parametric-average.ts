@@ -6,3 +6,4 @@ for (let i: number = 1; i <= myNumber; i++) {
 };
 console.log("Sum: " + PrevSumNumber)
 console.log("average: " + (PrevSumNumber / myNumber))
+export {};

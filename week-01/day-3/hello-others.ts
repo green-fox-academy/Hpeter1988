@@ -5,3 +5,4 @@
 console.log('Hello Other Peter!');
 console.log('Hello Szabi!');
 console.log('Hello Balázs!');
+export {};
