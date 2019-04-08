@@ -6,10 +6,11 @@
 //     -  Prepare for the special case when no parameters are given
 // -  Greet `nameToGreet`
 
-let nameToGreat: string = 'Greenfox'
+let nameToGreat: string = "GreenFox"
 
 function greet(greets: string):string{
-    return greets = "Greetings, dear " + greets
+   if( nameToGreat.length > 0) {return greets = "Greetings, dear " + greets}
+   else return "Name needed"
 }
 
 console.log(greet(nameToGreat))
