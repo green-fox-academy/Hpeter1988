@@ -1,4 +1,4 @@
-
+'use strict'
     
 // -  Create variable named `nameToGreet` and assign the value `Greenfox` to it
 // -  Create a function called `greet` that greets it's input parameter
@@ -13,3 +13,4 @@ function greet(greets: string):string{
 }
 
 console.log(greet(nameToGreat))
+export {};

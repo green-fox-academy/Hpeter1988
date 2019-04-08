@@ -8,3 +8,4 @@ function doubling (Num: number):number{
 return Num *= 2;
 }
 console.log(doubling(baseNum))
+export {};
