@@ -4,5 +4,6 @@
 
 'use string'
 
-let magicNumbers: number [] = [1, 3, 5, 7]
-console.log( magicNumbers[2])
+let magicNumbers: number[] = [1, 3, 5, 7]
+console.log(magicNumbers[2])
+export { };
