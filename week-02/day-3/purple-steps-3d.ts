@@ -8,12 +8,14 @@ const ctx = canvas.getContext('2d');
 // Reproduce this:
 // [https://github.com/green-fox-academy/teaching-materials/blob/master/workshop/drawing/purple-steps/r3.png]
 
-let s: number = 10;
+let s: number = 0;
+let x: number = 0;
+let y: number = 0;
 
-for (let i: number = 0; i < 5; i++) {
+for (let i: number = 0; i <= 120; i += 20) {
         ctx.strokeStyle = "black";
-        ctx.strokeRect(s, s, s, s);
+        ctx.strokeRect(x, y, s + i, s + i);
         ctx.fillStyle = "purple";
-        ctx.fillRect(s, s, s, s);
-        s = s + s
+        ctx.fillRect(x, y, s + i, s + i);
+        x = x + i; y = y + i;
 }
