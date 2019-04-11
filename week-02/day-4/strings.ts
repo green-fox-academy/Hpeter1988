@@ -5,10 +5,13 @@
 
 
 function stringer(main: string,) :string{
-    
-    let xArr: number =  main.indexOf('x')
-    console.log(xArr)
+    let x: string = "x";
+    if (main.indexOf(x) === -1){
+     return main;
+    }else{
+      main = main.replace(x,"y" );
+      return stringer(main);
     }
-    
-    console.log(stringer(2, 3))
+}
+    console.log(stringer("xyz"))
     
