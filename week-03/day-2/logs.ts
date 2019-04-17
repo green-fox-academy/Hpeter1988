@@ -6,26 +6,31 @@
 // Write a function that returns the GET / POST request ratio.
 const fs = require('fs');
 
-function uniqIP(file: string){
-let fileContent = fs.readFileSync(file, 'UTF-8');
-let fileContentArr = fileContent.split('   ')
-let uniq:string[]= []
-for(let i:number = 1; i <= fileContentArr.length-1; i += 2){
-(uniq.push(fileContentArr[i]))}
-//Post counter
-let fileContentArr2 = fileContent.split(' ')
-let postcount: number = 0
-let getcount: number = 0
-for(let j:number = 0; j <= fileContentArr2.length-1; j++){
-if(fileContentArr2[j].indexOf('POST') != -1){
-postcount++}
-}
-for(let k:number = 0; k <= fileContentArr2.length-1; k++){
-  if(fileContentArr2[k].indexOf('GET') != -1){
-  getcount++}
+const decoding: string = 'UTF-8'
+
+function uniqIP(file: string) {
+  let fileContent = fs.readFileSync(file, decoding);
+  let splitedContentArr = fileContent.split('   ')
+  let allIPs: string[] = [];
+  for (let i: number = 1; i <= splitedContentArr.length - 1; i += 2) {
+    (allIPs.push(splitedContentArr[i]))
   }
-console.log(`Number of GETs ${getcount}`)
-console.log(`Number of POSTs ${postcount}`)
+  let uniqueIPs = Array.from(new Set(allIPs))
+  console.log(uniqueIPs)
 }
 
-uniqIP('log.txt')
+function postGetCounter(file: string) {
+  let fileContent = fs.readFileSync(file, decoding);
+  let splitedContentArr = fileContent.split('\n');
+  let getcount: number = 0;
+  for (let i: number = 0; i <= splitedContentArr.length - 1; i++) {
+    if (splitedContentArr[i].indexOf('GET') > -1) {
+      getcount++;
+    }
+  }
+  let postcount: number = splitedContentArr.length - getcount;
+  console.log(`Get: ${getcount}`);
+  console.log(`Post: ${postcount}`);
+}
+uniqIP('log.txt');
+postGetCounter('log.txt');
