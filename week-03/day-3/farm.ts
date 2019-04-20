@@ -20,7 +20,7 @@ class Farm {
     
   }
   breed(animalName: string) {
-    if (this.myFarm.length <= this.placeForAnimals) {
+    if (this.myFarm.length < this.placeForAnimals) {
       this.myFarm.push(new Animals(animalName));
     } else console.log("No place for new animal");
   }
@@ -47,4 +47,8 @@ myFirstFarm.breed('Sheep')
 myFirstFarm.myFarm[1].eat()
 console.log(myFirstFarm.myFarm[1])
 myFirstFarm.slaughter()
+console.log(myFirstFarm)
+myFirstFarm.breed('Sheep2')
+myFirstFarm.breed('Sheep3')
+myFirstFarm.breed('Sheep4')
 console.log(myFirstFarm)
