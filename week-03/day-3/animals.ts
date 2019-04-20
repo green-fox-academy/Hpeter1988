@@ -8,7 +8,7 @@
 //Every animal can drink() which decreases their thirst by one
 //Every animal can play() which increases both by one
 
-class Animals {
+export class Animals {
   animalName: string;
   hunger: number;
   thirst: number;
