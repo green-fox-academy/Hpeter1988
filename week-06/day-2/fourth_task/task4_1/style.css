@@ -1,19 +1,29 @@
-body {
+body{  margin: 0;
+  padding:0;}
+.main_container {
   margin: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 header {
   background-color: #b029ff;
   width: 100vw;
   height: 62px;
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-items: left;
 }
 nav {
   display: flex;
   height: 34px;
+  margin-left: 10px;
 }
 a {
   background-color: cyan;
   margin: 5px;
+
 }
 .first {
   width: 110px;
@@ -24,18 +34,29 @@ a {
 .third {
   width: 95px;
 }
+.fourth{width: 84px;}
 .container {
   display: flex;
-  width: 100vw;
-  height: 100vw;
+  width: 900px;
+  height: 900px;
+  margin-top:73px;
 }
 .content {
   background-color: yellow;
   flex-grow: 507;
-  margin-left: 40px;
+  margin-right: 10px;
 }
 .sidebar {
   background-color: green;
   flex-grow: 253;
 
+}
+.footer_container{display: flex;
+justify-content: center;}
+footer{
+  width: 900px;
+  height: 31px;
+  background-color:gray;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
