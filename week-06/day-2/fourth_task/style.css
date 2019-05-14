@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+header {
+  background-color: #b029ff;
+  width: 100vw;
+  height: 62px;
+  position: fixed;
+}
+nav {
+  display: flex;
+  height: 34px;
+}
+a {
+  background-color: cyan;
+  margin: 5px;
+}
+.first {
+  width: 110px;
+}
+.second {
+  width: 84px;
+}
+.third {
+  width: 95px;
+}
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vw;
+}
+.content {
+  background-color: yellow;
+  flex-grow: 507;
+}
+.sidebar {
+  background-color: green;
+  flex-grow: 253;
+}
