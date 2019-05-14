@@ -1,0 +1,40 @@
+header {
+  width: 538px;
+  height: 99px;
+  background-color: cyan;
+}
+
+.container {
+  display: flex;
+  width: 538px;
+  height: 499px;
+}
+
+.orange {
+  flex-grow: 1;
+  background-color: orange;
+}
+.red {
+  background-color: red;
+  flex-grow: 3;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.black {
+  width: 48px;
+  height: 48px;
+  background-color: black;
+  margin:10px;
+}
+.purple {
+  flex-grow: 1;
+  background-color: purple;
+}
+footer {
+  width: 538px;
+  height: 98px;
+  background-color: blue;
+}
