@@ -1,0 +1,6 @@
+.item{height: 189px;
+  width: 189px;}
+  .container{display: flex}
+  .green{ background-color:	#52D400;}
+  .yellow{background-color: #FFD72A;}
+  .purple{background-color: 	#B029FF;}
