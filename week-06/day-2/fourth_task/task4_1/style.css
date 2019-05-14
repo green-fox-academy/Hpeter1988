@@ -32,8 +32,10 @@ a {
 .content {
   background-color: yellow;
   flex-grow: 507;
+  margin-left: 40px;
 }
 .sidebar {
   background-color: green;
   flex-grow: 253;
+
 }
