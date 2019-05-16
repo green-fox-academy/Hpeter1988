@@ -15,10 +15,10 @@ const cocktails = [
 
 const alcoholList = ['gin', 'vodka', 'rum', 'tequila'];
 
-// set the view engine to ejs
-app.set('view engine', 'ejs');
 
-// home page
+app.set('view engine', 'ejs');
+app.use('/static', express.static('static'));
+
 app.get('/', (req, res) => {
   cocktailContainer = [];
   for (let i = 0; i < cocktails.length; i++) {
@@ -32,7 +32,7 @@ app.get('/', (req, res) => {
     res.render('home', { cocktails: cocktailContainer, alcoholList : alcoholList });
   }
 });
-// start express app on port 3000
+
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });

@@ -14,18 +14,18 @@
       <%}%>
       </nav>
     <table>
-      <tr>>
+      <tr>
         <th>NAME</th>
         <th>PRICE</th>
       </tr>
       <% for(let i = 0; i < cocktails.length; i++){%>
       <tr>
-        <td class = cocktails><%= cocktails[i].name %>
+        <td class = cocktails> <strong> <%= cocktails[i].name %> </strong>
           <% if(!cocktails[i].isAlcoholic){%>
           <span class = 'isAlcoholic'>(non-alcoholic)</span> 
           <% };%>
           <br> <span class = 'contains'> <%= cocktails[i].contains %></span></td>
-        <td class = 'price'><%= cocktails[i].price %></td>
+        <td class = 'price'><strong><%= cocktails[i].price %> Ft</strong></td>
       </tr>
       <% };%>
     </table>

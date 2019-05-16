@@ -1,0 +1,11 @@
+a{text-decoration: none;
+margin-right: 12px}
+th{color: aliceblue;
+background-color: black;
+padding: 15px}
+td{padding: 15px}
+tr:nth-child(even){
+  background-color: #ddd;
+}
+.isAlcoholic{font-size: 16px}
+nav{margin-bottom: 10px}
