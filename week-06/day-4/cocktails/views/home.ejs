@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cocktails</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <h1>Cocktails</h1>
+    <nav>
+      <a href="http://localhost:3000/">ALL</a>
+      <% for (let i = 0; i < alcoholList.length; i++){%>
+      <a href="http://localhost:3000/?alcohol=<%= alcoholList[i]%>"> <%= alcoholList[i].toUpperCase()%> </a>
+      <%}%>
+      </nav>
+    <table>
+      <tr>>
+        <th>NAME</th>
+        <th>PRICE</th>
+      </tr>
+      <% for(let i = 0; i < cocktails.length; i++){%>
+      <tr>
+        <td class = cocktails><%= cocktails[i].name %>
+          <% if(!cocktails[i].isAlcoholic){%>
+          <span class = 'isAlcoholic'>(non-alcoholic)</span> 
+          <% };%>
+          <br> <span class = 'contains'> <%= cocktails[i].contains %></span></td>
+        <td class = 'price'><%= cocktails[i].price %></td>
+      </tr>
+      <% };%>
+    </table>
+  </body>
+</html>
