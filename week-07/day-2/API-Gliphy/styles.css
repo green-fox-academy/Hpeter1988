@@ -1,0 +1,9 @@
+.Container{
+  display: flex;
+  flex-direction: column;
+}
+.Container > a > img {
+  width: 70px;
+  height: 70px;
+  margin:10px;
+}
