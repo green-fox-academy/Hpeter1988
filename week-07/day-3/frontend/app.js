@@ -39,6 +39,17 @@ app.get('/greeter', (req, res) => {
 });
 
 
+app.get('/appenda/:word', (req, res) => {
+ let input = app.param.word
+ let answer = {};
+ if(input){
+ answer.appended = input
+}
+else{
+res.status(404)}
+
+});
+
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
