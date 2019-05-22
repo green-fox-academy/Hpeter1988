@@ -13,13 +13,12 @@ app.get('/doubling', (req, res) => {
   let input = req.query.input;
   let answer = {};
   if(input){
-  anwser.received = input*1;
-  anwser.result = input*2;
+  answer.received = input*1;
+  answer.result = input*2;
   }
-  else anwser.error = 'Please provide an input!'
+  else answer.error = 'Please provide an input!'
 
   res.send(answer)
-  
 });
 
 
