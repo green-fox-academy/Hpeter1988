@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const PORT = 8080;
-
+app.use(express.json());
 app.use(express.static('assets'))
 
 app.get('/', (req, res) => {
@@ -43,13 +43,42 @@ app.get('/appenda/:word', (req, res) => {
  let input = app.param.word
  let answer = {};
  if(input){
- answer.appended = input
+ answer.appended = input + 'a'
+ res.send(answer)
 }
 else{
 res.status(404)}
 
 });
 
+app.post('/dountil/:action', (req, res) => {
+  var answer = {};
+  if (req.params.action === 'sum' && req.body.until !== 0){
+    answer = {"result" : sumTo(req.body.until)};
+} else if (req.params.action === 'factor' && req.body.until !== 0){
+    answer = {"result" : factorTo(req.body.until)};
+
+  }
+  else{answer.error = "Please provide a number!"}
+  res.send(answer);
+});
+
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
+
+
+function sumTo(n) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+  return sum;
+}
+function factorTo(n) {
+  let sum = 1;
+  for (let i = 1; i <= n; i++) {
+    sum = sum * i;
+  }
+  return sum;
+}
