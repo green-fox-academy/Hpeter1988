@@ -21,10 +21,8 @@ conn.connect(err => {
 });
 
 
-
-
-app.get('/', (req, res) => {
-  res.send("WHAT'S UP MATE?");
+app.get('/hello', (req, res) => {
+  res.status(200).send("WHAT'S UP MATE?");
  });
 
 app.listen(PORT, () => {
