@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>W8 and Click</title>
+  </head>
+
+  <body>
+    <button>W8 5 sec and click 3 times!</button>
+    <p></p>
+    <script>
+      'use strict';
+
+      const button = document.querySelector("button");
+      let clickCounter = 0;
+      setTimeout(() => {
+        button.addEventListener('click', e => {
+          clickCounter++;
+          if (clickCounter === 3) {
+            document.querySelector("p").innerText = "5 seconds elapsed and clicked 3 times";
+          }
+        })
+      }, 5000)
+    </script>
+  </body>
+</html>
