@@ -31,8 +31,11 @@ input{
   width: 20rem;
   height: 2rem;
   border: 1px solid darkslategrey;
-  border-radius: 3px;}
-
+  border-radius: 3px;
+  }
+  input:focus{
+    bo
+  }
 #button{
   border-radius: 15px;
   background-color: black;

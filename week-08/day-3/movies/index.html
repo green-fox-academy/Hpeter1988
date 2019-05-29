@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <form>
+    <select id="genres">
+      <option value="" selected disabled hidden>Choose here</option>
+      <option value="Sci-fi">Sci-fi</option>
+      <option value="Drama">Drama</option>
+      <option value="Comedy">Comedy</option>
+      </select>
+    <select id="movies">
+      <option value="" selected disabled hidden>Choose here</option>
+      <option class="Movie Sci-fi" value="Moon">Moon</option>
+      <option class="Movie Sci-fi" value="2001: A Space Odyssey">2001: A Space Odyssey</option>
+      <option class="Movie Sci-fi" value="Contact">Contact</option>
+      <option class="Movie Drama" value="Darkest Hour">Darkest Hour</option>
+      <option class="Movie Drama" value="There Will Be Blood">There Will Be Blood</option>
+      <option class="Movie Drama"  value="American Beauty">American Beauty</option>
+      <option class="Movie Comedy" value="Airplane!">Airplane!</option>
+      <option class="Movie Comdey" value="Deadpool">Deadpool</option>
+      <option class="Movie Comedy" value="Wayne's World">Wayne's World</option>
+      </select>
+  </form>
+  <script>
+    
+    document.querySelector("#genres").addEventListener("change", function() {
+      console.log(document.querySelectorAll('.Movie')[0].classList)
+      for(let i = 0; i <  document.querySelectorAll('.Movie').length; i++ ){
+      if(document.querySelector("#genres").value != document.querySelectorAll('.Movie')[i].classList[1]){
+        document.querySelectorAll('.Movie')[i].setAttribute('disabled','')
+      }
+      }
+    });
+  </script>
+</body>
+
+</html>
