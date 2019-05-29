@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Button Disable</title>
+  </head>
+  <body>
+    <form action="/send" method="POST">
+      <div>
+      <h3>What is your favourite pet?</h3>
+      <label for="cat">Cat</label>
+      <input type="radio" name="What is your favourite pet?" value="cat" id="cat" />
+      <label for="dog">Dog</label>
+      <input type="radio" name="What is your favourite pet?" value="dog" id="dog" />
+      <label fish="other">Vikotr the goldfish</label>
+      <input type="radio" name="What is your favourite pet?" value="fish" id="fish" />
+    </div>
+    <div>
+      <h3>Do you want to sign up for cat facts?</h3>
+      <label for="yes">yes</label>
+      <input type="radio" name="Do you want to sign up for cat facts?" value="yes" id="yes" />
+      <label for="no">no</label>
+      <input type="radio" name="Do you want to sign up for cat facts?" value="no" id="no" />
+    </div>
+      <div>
+      <button id="lovecat" disabled>I love cats</button>
+      <button id ="signup" disabled>Sign Up</button>
+      </div>
+    </form>
+    <script>
+      document.querySelector('form').addEventListener('click', () => {
+
+        if(document.querySelector('#cat').checked || document.querySelector('#dog').checked){
+          document.querySelector('#signup').removeAttribute('disabled')
+        } 
+       if(document.querySelector('#yes').checked){
+          document.querySelector('#lovecat').removeAttribute('disabled')
+        }
+        if(document.querySelector('#fish').checked && !document.querySelector('#no').checked){
+          document.querySelector('#signup').setAttribute('disabled', '')
+        } 
+        if(document.querySelector('#fish').checked && document.querySelector('#no').checked){
+          document.querySelector('#signup').removeAttribute('disabled')}
+       
+      });
+      document.querySelector('#lovecat').addEventListener('click', ()=> 
+      alert(`Thank you, you've successfully signed up for cat facts`)
+      )
+      document.querySelector('#signup').addEventListener('click', ()=>{
+    if (document.querySelector('#fish').checked && document.querySelector('#no').checked){
+      alert(`Sigh, we still added you to the cat facts list`)
+      }else
+      alert(`Thank you, you've successfully signed up for cat facts`)
+    })
+    </script>
+  </body>
+</html>
