@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 23px;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  color: #ffffff;
+}
+
+body {
+  background-color: #2f3060;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button-container {
+  width: 600px;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+  height: 60px;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+  margin: 10px;
+  width: 250px;
+}
+
+.blue {
+  background: linear-gradient(#557ccf, #213258);
+  border-top: 2px solid #5f8dee;
+  border-bottom: 4px solid #3d5599;
+}
+
+.green {
+  background: linear-gradient(#18924d, #1dc961);
+  border-top: 2px solid #42c97c;
+  border-bottom: 4px solid #1d8d55;
+}
+
+.red {
+  background: linear-gradient(#dd210c, #ec6253);
+  border-top: 2px solid #ce6759;
+  border-bottom: 4px solid #9e4347;
+}
+
+.light{
+  background: linear-gradient(#4edbd0, #005b72);
+  border-top: 2px solid #53dcca;
+  border-bottom: 4px solid #4ecfd8;
+}
+
+.black{
+  background: linear-gradient(#070707, #1b1b1b);
+  border-top: 2px solid #272727;
+  border-bottom: 4px solid #363636;
+}
+
+.white{
+  background: linear-gradient(#ffffff, #b1b1b1);
+  border-top: 2px solid #dbdbdb;
+  border-bottom: 4px solid #9e9e9e;
+  color: #070707;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  filter: brightness(90%);
+}
+
+button:focus {
+  outline: none;
+}
