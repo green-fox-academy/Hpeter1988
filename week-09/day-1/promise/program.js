@@ -1,10 +1,11 @@
 'use strict';
 
 const promise = new Promise((fulfill, reject) => {
-  setTimeout(() => reject(new Error('REJECTED!')), 300);
+  fulfill('I FIRED');
+  reject(new Error('I DID NOT FIRE'));
 });
 
 const onReject = (err) => console.log(err.message);
 
 promise
-  .then(null, onReject);
+  .then(console.log, onReject);
