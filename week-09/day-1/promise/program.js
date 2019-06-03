@@ -1,11 +1,10 @@
 'use strict';
 
 const promise = new Promise((fulfill, reject) => {
-  fulfill('I FIRED');
-  reject(new Error('I DID NOT FIRE'));
+  fulfill('PROMISE VALUE');
 });
 
-const onReject = (err) => console.log(err.message);
-
 promise
-  .then(console.log, onReject);
+  .then(console.log);
+
+console.log('MAIN PROGRAM');
