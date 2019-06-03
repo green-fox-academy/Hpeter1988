@@ -1,10 +1,10 @@
 'use strict';
 
-const promise = new Promise((fulfill, reject) => {
-  fulfill('PROMISE VALUE');
-});
+const resolved = Promise.resolve('SUCCESS!');
+const rejected = Promise.reject(new Error('ERROR'));
 
-promise
+resolved
   .then(console.log);
 
-console.log('MAIN PROGRAM');
+rejected
+  .catch((err) => console.log(err.message));
